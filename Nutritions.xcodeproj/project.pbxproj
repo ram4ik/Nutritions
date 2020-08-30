@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		1DB50D8624FBA1EE0004ADC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50D8524FBA1EE0004ADC3 /* ContentView.swift */; };
 		1DB50D8824FBA1F20004ADC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB50D8724FBA1F20004ADC3 /* Assets.xcassets */; };
 		1DB50D8B24FBA1F20004ADC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB50D8A24FBA1F20004ADC3 /* Preview Assets.xcassets */; };
+		1DB50D9324FBA2740004ADC3 /* NutritionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50D9224FBA2740004ADC3 /* NutritionsView.swift */; };
+		1DB50D9624FBA2EA0004ADC3 /* CTPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB50D9524FBA2EA0004ADC3 /* CTPicker */; };
+		1DB50D9924FBA3820004ADC3 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50D9824FBA3820004ADC3 /* Grocery.swift */; };
+		1DB50D9B24FBAFC60004ADC3 /* GroceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50D9A24FBAFC60004ADC3 /* GroceriesViewModel.swift */; };
+		1DB50D9E24FBB3280004ADC3 /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50D9D24FBB3280004ADC3 /* NutritionData.swift */; };
+		1DB50DA124FBB3930004ADC3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB50DA024FBB3930004ADC3 /* Api.swift */; };
+		1DB50DA624FBCE730004ADC3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB50DA524FBCE730004ADC3 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,11 @@
 		1DB50D8724FBA1F20004ADC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB50D8A24FBA1F20004ADC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DB50D8C24FBA1F20004ADC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB50D9224FBA2740004ADC3 /* NutritionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionsView.swift; sourceTree = "<group>"; };
+		1DB50D9824FBA3820004ADC3 /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		1DB50D9A24FBAFC60004ADC3 /* GroceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewModel.swift; sourceTree = "<group>"; };
+		1DB50D9D24FBB3280004ADC3 /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
+		1DB50DA024FBB3930004ADC3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB50DA624FBCE730004ADC3 /* SDWebImageSwiftUI in Frameworks */,
+				1DB50D9624FBA2EA0004ADC3 /* CTPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +66,15 @@
 		1DB50D8224FBA1ED0004ADC3 /* Nutritions */ = {
 			isa = PBXGroup;
 			children = (
+				1DB50D9F24FBB3850004ADC3 /* Service */,
+				1DB50D9C24FBB30A0004ADC3 /* NutritionData */,
+				1DB50D9724FBA36A0004ADC3 /* GroceriesFiles */,
 				1DB50D8324FBA1EE0004ADC3 /* NutritionsApp.swift */,
 				1DB50D8524FBA1EE0004ADC3 /* ContentView.swift */,
 				1DB50D8724FBA1F20004ADC3 /* Assets.xcassets */,
 				1DB50D8C24FBA1F20004ADC3 /* Info.plist */,
 				1DB50D8924FBA1F20004ADC3 /* Preview Content */,
+				1DB50D9224FBA2740004ADC3 /* NutritionsView.swift */,
 			);
 			path = Nutritions;
 			sourceTree = "<group>";
@@ -67,6 +85,31 @@
 				1DB50D8A24FBA1F20004ADC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DB50D9724FBA36A0004ADC3 /* GroceriesFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1DB50D9824FBA3820004ADC3 /* Grocery.swift */,
+				1DB50D9A24FBAFC60004ADC3 /* GroceriesViewModel.swift */,
+			);
+			path = GroceriesFiles;
+			sourceTree = "<group>";
+		};
+		1DB50D9C24FBB30A0004ADC3 /* NutritionData */ = {
+			isa = PBXGroup;
+			children = (
+				1DB50D9D24FBB3280004ADC3 /* NutritionData.swift */,
+			);
+			path = NutritionData;
+			sourceTree = "<group>";
+		};
+		1DB50D9F24FBB3850004ADC3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1DB50DA024FBB3930004ADC3 /* Api.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +128,10 @@
 			dependencies = (
 			);
 			name = Nutritions;
+			packageProductDependencies = (
+				1DB50D9524FBA2EA0004ADC3 /* CTPicker */,
+				1DB50DA524FBCE730004ADC3 /* SDWebImageSwiftUI */,
+			);
 			productName = Nutritions;
 			productReference = 1DB50D8024FBA1ED0004ADC3 /* Nutritions.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +159,10 @@
 				Base,
 			);
 			mainGroup = 1DB50D7724FBA1ED0004ADC3;
+			packageReferences = (
+				1DB50D9424FBA2EA0004ADC3 /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */,
+				1DB50DA424FBCE730004ADC3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 1DB50D8124FBA1ED0004ADC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +191,11 @@
 			files = (
 				1DB50D8624FBA1EE0004ADC3 /* ContentView.swift in Sources */,
 				1DB50D8424FBA1EE0004ADC3 /* NutritionsApp.swift in Sources */,
+				1DB50D9E24FBB3280004ADC3 /* NutritionData.swift in Sources */,
+				1DB50D9324FBA2740004ADC3 /* NutritionsView.swift in Sources */,
+				1DB50D9B24FBAFC60004ADC3 /* GroceriesViewModel.swift in Sources */,
+				1DB50DA124FBB3930004ADC3 /* Api.swift in Sources */,
+				1DB50D9924FBA3820004ADC3 /* Grocery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +384,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DB50D9424FBA2EA0004ADC3 /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StewartLynch/CTPicker_SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.5;
+			};
+		};
+		1DB50DA424FBCE730004ADC3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DB50D9524FBA2EA0004ADC3 /* CTPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DB50D9424FBA2EA0004ADC3 /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */;
+			productName = CTPicker;
+		};
+		1DB50DA524FBCE730004ADC3 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DB50DA424FBCE730004ADC3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DB50D7824FBA1ED0004ADC3 /* Project object */;
 }
